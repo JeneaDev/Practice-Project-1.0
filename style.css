@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(rgba(0, 191, 255, 0.544), rgba(0, 128, 0, 0.524), blue);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.container
+{
+    position: relative; 
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+header
+{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+}
+header ul
+{
+    display: flex;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header ul li a 
+{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+
+header ul li a:hover
+{
+    background: greenyellow;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.content
+{
+    transform: translateX(-100px);
+    max-width: 700px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 110px;
+
+}
+.content h2
+{
+    font-size: 3em;
+    color: white;
+}
+.content p
+{
+    font-size: 1.2em;
+    color: white;
+}
+.content a
+{
+    display: inline-block;
+    padding: 15px 30px;
+    background: blue;
+    color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.charc {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    position: relative; /* Set positioning context for absolute positioning */
+  }
+  
+  .charc img {
+    position: absolute; /* Position the image absolutely within the container */
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    animation: floatUpDown 4s ease-in-out infinite; /* Apply the animation */
+  }
+  
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position (no vertical movement) */
+    }
+    50% {
+      transform: translateY(-20px); /* Float the image up by 20 pixels */
+    }
+  }
+
+.icons
+{
+    position: absolute;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons li
+{
+list-style: none;
+}
+.icons li a
+{
+ text-decoration: none;
+ width: 50px;   
+ height: 50px;
+ background: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ margin: 5px 0;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icons li a img
+{
+    transform: scale(0.6);
+    transition: 0.5s;
+}
+.icons li:hover a img
+{
+    transform: scale(0.6) rotate(360deg);
+}
